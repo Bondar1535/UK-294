@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let num = Math.floor(Math.random() * 100)
+            let guessNum = prompt('Guess num from 1 to 100')
+            while(guessNum != num){
+                if(guessNum < num){
+                   guessNum = prompt('It is greater!')
+                }
+                if(guessNum > num){
+                    guessNum = prompt('It is less!')
+                }
+            }alert('It is right!')
+        </script>
+    </head>
+</html>
