@@ -33,14 +33,43 @@
 	</ul>
 
 	<script>
-		let e1 = document.getElementsByTagName('h2')
-		console.log('Wähle alle Spiele im Bereich "Neuveröffentlichungen" aus.')
-        //alert('Wähle das zweite Spiel im Bereich "Bestseller" aus.')
-        //alert('Wähle das letzte Spiel im Bereich "Kostenlos spielen" aus.')
-        //alert('Wähle alle Listenelemente im Bereich "Bestseller" aus.')
-        //alert('Wähle das h1-Element aus.')
-        //alert('Wähle das game-of-the-day aus')
-        //alert('Wähle alle Spiele aus, die im Sale sind')
+		let el_1 = document.querySelectorAll('h2 + ul')[0].querySelectorAll('li')
+		let el_1_text = ''
+		el_1.forEach(element => {
+			el_1_text += element.innerText + '\n';
+		});
+		console.log('Wähle alle Spiele im Bereich "Neuveröffentlichungen" aus. \n' + el_1_text)
+        
+
+		let el_2 = document.querySelectorAll('h2 + ul')[1].querySelectorAll('li')[1]
+		let el_2_text = el_2.innerText
+		console.log('Wähle das zweite Spiel im Bereich "Bestseller" aus. \n' + el_2_text)
+        
+		let el_3 = document.querySelectorAll('h2 + ul')[2].querySelector('li:last-of-type')
+		let el_3_text = el_3.innerText
+		console.log('Wähle das letzte Spiel im Bereich "Kostenlos spielen" aus. \n' + el_3_text)
+        
+		let el_4 = document.querySelectorAll('h2 + ul')[1].querySelectorAll('li')
+		let el_4_text = ''
+		el_4.forEach(element => {
+			el_4_text += element.innerText
+		});
+		console.log('Wähle alle Listenelemente im Bereich "Bestseller" aus. \n' + el_4_text)
+        
+		let el_5 = document.querySelector('h1')
+		let el_5_text = el_5.innerText
+		console.log('Wähle das h1-Element aus. \n' + el_5_text)
+        
+		let el_6 = document.querySelector('#game-of-the-day')
+		let el_6_text = el_6.innerText
+		console.log('Wähle das game-of-the-day aus \n' + el_6_text)
+        
+		let el_7 = document.querySelectorAll('ul > li.sale')
+		let el_7_text = ''
+		el_7.forEach(element => {
+			el_7_text += element.innerText + '\n'
+		});
+		console.log('Wähle alle Spiele aus, die im Sale sind \n' + el_7_text)
 	</script>
 </body>
 

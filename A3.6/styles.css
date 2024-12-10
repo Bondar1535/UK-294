@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+#container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: center;
+}
+#container div{
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+}
+
+#container div img {
+    width: auto;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    padding: 10px;
+}
