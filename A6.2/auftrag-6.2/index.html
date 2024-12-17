@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Passwortbestätigung</title>
+    <style>
+      label, input, button {
+        display: block;
+      }
+
+      input:invalid {
+        border: 1px solid red;
+      }
+
+      input:valid {
+        border: 1px solid green;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <form name="signUp" autocomplete="off">
+      <label for="email-input">E-Mail-Adresse</label>
+      <input type="email" name="email" id="email-input" required />
+      <label for="password-input">Passwort</label>
+      <input type="password" name="password" id="password-input" autocomplete="new-password" required minlength="5" />
+      <label for="password-confirmation-input">Passwortbestätigung</label>
+      <input type="password" name="password-confirmation" id="password-confirmation-input" required minlength="5" />
+      <label for="tac-input">AGB akzeptieren</label>
+      <input type="checkbox" name="tac" id="tac-input" required />
+      <button type="submit">Registrieren</button>
+    </form>
+  </body>
+
+</html>

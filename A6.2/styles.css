@@ -1,0 +1,13 @@
+body{
+    font-family: monospace;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+input:valid{
+    border-color: green !important;
+}
