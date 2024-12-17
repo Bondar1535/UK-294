@@ -1,0 +1,47 @@
+body{
+    font-family: cursive;
+}
+
+.tasksCont{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.taskWrapper{
+    background-color: rgb(193, 191, 191);
+    width: 120px;
+    text-align: center;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    min-height: 50px;
+}
+
+.taskWrapper p, h3{
+    margin: 0;
+}
+
+
+.newTask {
+    background-color: rgb(193, 191, 191);
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.newTask input{
+    width: 80%;
+    border-radius: 5%;
+}
+
+.crudButtons{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+    margin-bottom: 10px;
+    width: 50%;
+}
